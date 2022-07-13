@@ -1,5 +1,5 @@
- const ADDBOOK = 'react-project2-bookstore/books/ADDBOOK';
- const REMOVE = 'react-project2-bookstore/books/REMOVE';
+const ADDBOOK = 'react-project2-bookstore/books/ADDBOOK';
+const REMOVE = 'react-project2-bookstore/books/REMOVE';
 const initialstate = [];
 
 export const addingBookReducer = (state = initialstate, action) => {
