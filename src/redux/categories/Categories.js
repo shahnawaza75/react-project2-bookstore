@@ -7,13 +7,14 @@ const categoriesState = {
 
 export const checkStatus = () => ({
   type: CHECK_STATUS,
-  showState: false,
+  // showState: false,
+  payload: ['Under construction...'],
 });
 
-const checkReducer = (state = categoriesState, { type }) => {
-  switch (type) {
+const checkReducer = (state = categoriesState, action) => {
+  switch (action.type) {
     case CHECK_STATUS:
-      return { categories: ['Under construction...'] };
+      return { ...state, categories: action.payload };
     default:
       return state;
   }
