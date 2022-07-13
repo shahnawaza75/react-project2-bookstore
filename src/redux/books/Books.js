@@ -1,37 +1,27 @@
-export const ADDBOOK='ADDBOOK';
-export const REMOVE='REMOVE';
-const initialstate = {
-   books:[]
-}
+ const ADDBOOK = 'react-project2-bookstore/books/ADDBOOK';
+ const REMOVE = 'react-project2-bookstore/books/REMOVE';
+const initialstate = [];
 
-export const addingBook= (state =initialstate, {type,payload}) => {
+export const addingBookReducer = (state = initialstate, action) => {
+  switch (action.type) {
+    case ADDBOOK:
+      return {
+        ...state,
+      };
+    case REMOVE:
+      return state.filter((book) => book.id !== action.id);
+    default: return state;
+  }
+};
 
-    switch(type){
-        case ADDBOOK:
-            return {
-                ...state,
-                books:payload
-            }
-            case REMOVE:
-                return state.filter((book) => book.id !== action.id);
-            default: return state
+export const adding = (book) => ({
 
-    }
+  type: ADDBOOK,
+  book,
 
-}
+});
 
-
-
-export const adding = (payload) => ({
-
-type:ADDBOOK,
-payload
-
-})
-
-export const removing = (payload) => ({
-    type:REMOVE,
-    payload
-})
-
-
+export const removing = (book) => ({
+  type: REMOVE,
+  book,
+});
