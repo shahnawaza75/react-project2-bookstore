@@ -19,6 +19,6 @@ const BookList = () => {
       <Form />
     </>
   );
-        };
+};
 
 export default BookList;
