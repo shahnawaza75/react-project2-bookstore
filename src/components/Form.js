@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { adding } from '../redux/books/Books';
+import { addBooksToApi } from '../redux/books/Books';
 
 const Form = () => {
   const bookInitial = {
     title: '',
     author: '',
+    category:'',
   };
   const dispatch = useDispatch();
   const [book, setBook] = useState(bookInitial);
-  const { title, author } = book;
+  const { title, author,category } = book;
   const handleChange = (event) => {
     const { name, value } = event.target;
     setBook((prev) => ({
@@ -21,13 +22,17 @@ const Form = () => {
   const submitBooks = (event) => {
     event.preventDefault();
     const newBook = {
-      id: uuidv4(),
-      title,
-      author,
+      item_id: uuidv4(),
+      title:title,
+      author:author,
+      category:category
     };
-    dispatch(adding(newBook));
+    console.log(newBook);
+    dispatch(addBooksToApi(newBook));
     setBook(bookInitial);
   };
+
+
   return (
 
     <>
@@ -37,7 +42,8 @@ const Form = () => {
 
         <input type="title" name="title" value={title} onChange={handleChange} />
         <input type="author" name="author" value={author} onChange={handleChange} />
-        <button type="submit">ADD BOOK</button>
+        <input type="category" name="category" value={category} onChange={handleChange} />
+        <button type="submit" >ADD BOOK</button>
       </form>
 
     </>
