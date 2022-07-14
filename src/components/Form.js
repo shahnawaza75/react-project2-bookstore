@@ -7,11 +7,11 @@ const Form = () => {
   const bookInitial = {
     title: '',
     author: '',
-    category:'',
+    category: '',
   };
   const dispatch = useDispatch();
   const [book, setBook] = useState(bookInitial);
-  const { title, author,category } = book;
+  const { title, author, category } = book;
   const handleChange = (event) => {
     const { name, value } = event.target;
     setBook((prev) => ({
@@ -23,15 +23,14 @@ const Form = () => {
     event.preventDefault();
     const newBook = {
       item_id: uuidv4(),
-      title:title,
-      author:author,
-      category:category
+      title,
+      author,
+      category,
     };
     console.log(newBook);
     dispatch(addBooksToApi(newBook));
     setBook(bookInitial);
   };
-
 
   return (
 
@@ -43,7 +42,7 @@ const Form = () => {
         <input type="title" name="title" value={title} onChange={handleChange} />
         <input type="author" name="author" value={author} onChange={handleChange} />
         <input type="category" name="category" value={category} onChange={handleChange} />
-        <button type="submit" >ADD BOOK</button>
+        <button type="submit">ADD BOOK</button>
       </form>
 
     </>
