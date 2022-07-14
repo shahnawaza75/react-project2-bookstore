@@ -2,8 +2,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project will lay foundations for my Bookstore website. I will create the React part of the app. I will also set up routing using React Router.
-
+In this step I use Redux store to display books. I also add some UI elements to your components and make them dispatch actions. NOTE: editing an existing book and updating the progress is not part of this step. Neither is the styling of the application's components.
 ## Built With
 
 - Js
