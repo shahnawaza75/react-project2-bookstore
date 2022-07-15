@@ -27,7 +27,6 @@ const Form = () => {
       author,
       category,
     };
-    console.log(newBook);
     dispatch(addBooksToApi(newBook));
     setBook(bookInitial);
   };

@@ -5,25 +5,7 @@ const REMOVE = 'react-project2-bookstore/books/REMOVE';
 const FETCHBOOKNEW = 'react-project2-bookstore/books/FETCHBOOKNEW';
 const initialstate = [];
 const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/I2woupgn1HUaDhpzKYjg/books';
-// export const addBooksToApi= (newBook)= async (dispatch)=>{
 
-//   const response = await fetch(`apiUrl${/apps/}`, {
-//     method: 'POST', // *GET, POST, PUT, DELETE, etc.
-//     headers: {
-//       'Content-Type': 'application/json'
-//       // 'Content-Type': 'application/x-www-form-urlencoded',
-//     },
-
-//     body: JSON.stringify(newBook) // body data type must match "Content-Type" header
-//   }
-//   .then(data => {
-//     console.log(data);
-//     dispatch(adding(newBook));
-//   }));
-
-// }
-
-// actions
 export const adding = (book) => ({
 
   type: ADDBOOK,
@@ -70,6 +52,13 @@ export const fetchBooks = () => async (dispatch) => {
   });
 
   dispatch(fetching(arr));
+};
+
+export const deleteBook = (id) => async (dispatch) => {
+  const { status } = await axios.delete(`${apiUrl}/${id}`);
+  if (status === 201) {
+    dispatch(removing(id));
+  }
 };
 
 const addingBookReducer = (state = initialstate, action) => {

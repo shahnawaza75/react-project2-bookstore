@@ -13,8 +13,6 @@ const BookList = () => {
     dispatch(fetchBooks());
   }, []);
 
-  console.log(booklistnew);
-
   return (
     <>
       <ul>
