@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './styles/header.module.css';
 
 const Navigation = () => (
   <header>
@@ -7,10 +8,10 @@ const Navigation = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/">BOOKS</Link>
+          <Link className={styles.nav_link} to="/">BOOKS</Link>
         </li>
         <li>
-          <Link to="/categories">CATEGORIES</Link>
+          <Link className={styles.nav_link} to="/categories">CATEGORIES</Link>
         </li>
       </ul>
     </nav>

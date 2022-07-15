@@ -1,0 +1,25 @@
+header {
+    padding: 1.438rem 6.188rem;
+    border: 1px solid #e8e8e8;
+}
+
+header p {
+    color: #0290ff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav_link {
+    color: #121212;
+    text-decoration: none;
+    margin: auto 30px;
+    font-size: 0.7rem;
+}
+
+nav ul, 
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}

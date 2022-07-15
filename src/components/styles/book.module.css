@@ -1,0 +1,82 @@
+.book_container {
+    background-color: #fff;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+    border: solid 1px #e8e8e8;
+    border-radius: 4px;
+    color: #121212;
+}
+.book_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+    
+}
+
+.book_info h3 {
+    font-size: 1.5rem;
+}
+
+.book_info p {
+    opacity: 0.5;
+}
+
+.book_info button {
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+   color: #4386bf;
+   margin-top: 1rem;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+.oval { 
+        width: 3rem;
+        height: 3rem;
+        border: 16px solid #f3f3f3;
+        border-width: 5px;
+        border-radius: 50%;
+        border-top: 5px solid #379cf6;
+        transform: rotate(50deg);
+        
+      
+      
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.book_container hr {
+    height: 100px;
+    border: 0.05em solid #e8e8e8;
+}
+.progress {
+    width: 20%;
+   font-size: 15px;
+   display: flex;
+   flex-direction: column;
+}
+
+.progress button {
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+   font-size: 0.831rem;
+   border-radius: 3px;
+   border: none;
+   background-color: #0290ff;
+   padding: 0.4em;
+   margin-top: 20px;
+}
