@@ -1,25 +1,71 @@
-header {
-    padding: 1.438rem 6.188rem;
-    border: 1px solid #e8e8e8;
+/* header {
+  padding: 1.438rem 6.188rem;
+  border: 1px solid #e8e8e8;
 }
 
 header p {
-    color: #0290ff;
-    font-size: 1.4rem;
-    font-weight: bold;
+  color: #0290ff;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .nav_link {
-    color: #121212;
-    text-decoration: none;
-    margin: auto 30px;
-    font-size: 0.7rem;
+  color: #121212;
+  text-decoration: none;
+  margin: auto 30px;
+  font-size: 0.7rem;
 }
 
-nav ul, 
+nav ul,
 header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.bookStore_para {
+  margin-left: 30px;
+}
+
+.icon {
+    color: blue;
+} */
+
+nav.naviagtionbar {
+  display: flex;
+  align-content: center;
+  padding: 2%;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.5);
+}
+
+.navitem {
+  display: flex;
+  list-style-type: none;
+}
+
+ul.naviagtionlink {
+  display: flex;
+  list-style-type: none;
+  padding: 4px;
+}
+
+ul.naviagtionlink a {
+  padding: 25%;
+  color: blue;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.title {
+  color: blue;
+  margin-left: 101px;
+}
+
+.icon {
+  color: blue;
+  margin-right: 112px;
 }

@@ -1,6 +1,6 @@
 .book_list {
-    width: 80%;
-    max-height: 70vh;
-    overflow-y: scroll;
-    margin: auto;
+  width: 80%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  margin: auto;
 }

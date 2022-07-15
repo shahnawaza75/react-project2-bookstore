@@ -1,0 +1,14 @@
+.check_status {
+  background-color: #0290ff;
+  color: white;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  width: 150px;
+  margin-left: 200px;
+}
+
+h2 {
+  margin-left: 10%;
+  margin-top: 10%;
+}
