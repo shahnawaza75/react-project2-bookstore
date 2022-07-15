@@ -18,12 +18,21 @@ const Book = ({
         <h3>{title}</h3>
         <h4>{author}</h4>
         <div className={styles.btn}>
-          <button id={id} type="button">Comments</button> <nbsp />
-          | <nbsp />
-          <button id={id} type="button" onClick={remove}>Remove</button> <nbsp />
+          <button id={id} type="button">Comments</button>
+          {' '}
           <nbsp />
-          | <nbsp />
-          <nbsp /><button id={id} type="button">Edit</button>
+          |
+          {' '}
+          <nbsp />
+          <button id={id} type="button" onClick={remove}>Remove</button>
+          {' '}
+          <nbsp />
+          <nbsp />
+          |
+          {' '}
+          <nbsp />
+          <nbsp />
+          <button id={id} type="button">Edit</button>
         </div>
 
       </div>
