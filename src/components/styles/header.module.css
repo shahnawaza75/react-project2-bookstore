@@ -55,17 +55,17 @@ ul.naviagtionlink {
 
 ul.naviagtionlink a {
   padding: 25%;
-  color: blue;
+  color: #0290ff;
   text-decoration: none;
   opacity: 0.5;
 }
 
 .title {
-  color: blue;
+  color: #0290ff;
   margin-left: 101px;
 }
 
 .icon {
-  color: blue;
+  color: #0290ff;
   margin-right: 112px;
 }

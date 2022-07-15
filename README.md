@@ -2,12 +2,13 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-In this step I use Redux store to display books. I also add some UI elements to your components and make them dispatch actions. NOTE: editing an existing book and updating the progress is not part of this step. Neither is the styling of the application's components.
+Now that all the functionality is done, I have added styling. I have used Zeplin as a collaboration tool.
 ## Built With
 
 - Js
 - Create React App (CRA)
 - Gitflow
+- Css
 
 ### Prerequisites
 
