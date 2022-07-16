@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBooksToApi } from '../redux/books/Books';
+import styles from './styles/form.module.css';
 
 const Form = () => {
   const bookInitial = {
@@ -35,13 +36,12 @@ const Form = () => {
 
     <>
 
-      <h2>ADD NEW BOOK</h2>
-      <form onSubmit={submitBooks}>
+      <h2 className={styles.form_heading}>ADD NEW BOOK</h2>
+      <form onSubmit={submitBooks} className={styles.form_bottom}>
 
-        <input type="title" name="title" value={title} onChange={handleChange} />
-        <input type="author" name="author" value={author} onChange={handleChange} />
-        <input type="category" name="category" value={category} onChange={handleChange} />
-        <button type="submit">ADD BOOK</button>
+        <input type="title" placeholder="Book title" className={styles.form_titleInput} name="title" value={title} onChange={handleChange} />
+        <input type="author" placeholder="Author" className={styles.form_authorInput} name="author" value={author} onChange={handleChange} />
+        <button type="submit" className={styles.form_button1}>ADD BOOK</button>
       </form>
 
     </>

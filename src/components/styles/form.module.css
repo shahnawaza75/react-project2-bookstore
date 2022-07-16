@@ -1,0 +1,37 @@
+.form_bottom {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_heading {
+  text-align: start;
+  margin-top: 20px;
+  color: #bcbcbc;
+}
+
+.form_titleInput {
+  padding-left: 10px;
+  width: 50%;
+  height: 30px;
+  border: 1px #bcbcbc solid;
+}
+
+.form_authorInput {
+  width: 30%;
+  padding-left: 10px;
+  height: 30px;
+  border: 1px #bcbcbc solid;
+}
+
+.form_button1 {
+  height: 30px;
+  width: 145px;
+  background-color: #0290ff;
+  color: white;
+  border: none;
+}
