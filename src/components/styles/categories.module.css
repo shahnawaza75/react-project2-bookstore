@@ -5,7 +5,8 @@
   text-align: center;
   height: 30px;
   width: 150px;
-  margin-left: 200px;
+  margin: 100px 30%;
+  border: none;
 }
 
 h2 {

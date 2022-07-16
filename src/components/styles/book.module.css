@@ -19,12 +19,13 @@
 }
 
 .book_info h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .book_info h4 {
   font-size: 13px;
-  color: #0290ff;
+  color: #bcbcbc;
+  font-weight: 700;
 }
 
 .book_info p {
@@ -83,4 +84,9 @@
   background-color: #0290ff;
   padding: 0.4em;
   margin-top: 20px;
+}
+
+.progress p:first-child {
+  text-transform: uppercase;
+  color: #bcbcbc;
 }

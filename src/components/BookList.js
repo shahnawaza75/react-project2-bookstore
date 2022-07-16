@@ -15,7 +15,7 @@ const BookList = () => {
   }, []);
 
   return (
-    <>
+    <div className={styles.container}>
       <ul className={styles.book_list}>
         { booklistnew.map((book) => (
           <li key={book.id}>
@@ -24,7 +24,7 @@ const BookList = () => {
         ))}
       </ul>
       <Form />
-    </>
+    </div>
   );
 };
 

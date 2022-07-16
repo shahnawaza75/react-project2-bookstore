@@ -14,9 +14,9 @@ const Book = ({
   return (
     <div className={styles.book_container}>
       <div className={styles.book_info}>
+        <h4>{author}</h4>
         <p>{category}</p>
         <h3>{title}</h3>
-        <h4>{author}</h4>
         <div className={styles.btn}>
           <button id={id} type="button">Comments</button>
           {' '}

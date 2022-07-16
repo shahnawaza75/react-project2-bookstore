@@ -1,27 +1,31 @@
 .form_bottom {
-  width: 90%;
-  margin-left: auto;
+  width: 80%;
+  margin: auto;
   margin-top: 20px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form_heading {
-  margin-left: 127px;
+  text-align: start;
   margin-top: 20px;
+  color: #bcbcbc;
 }
 
 .form_titleInput {
   padding-left: 10px;
-  width: 550px;
+  width: 50%;
   height: 30px;
+  border: 1px #bcbcbc solid;
 }
 
 .form_authorInput {
-  margin-left: 35px;
-  margin-right: 35px;
-  width: 240px;
+  width: 30%;
   padding-left: 10px;
   height: 30px;
+  border: 1px #bcbcbc solid;
 }
 
 .form_button1 {
@@ -29,4 +33,5 @@
   width: 145px;
   background-color: #0290ff;
   color: white;
+  border: none;
 }

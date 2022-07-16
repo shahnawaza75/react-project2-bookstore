@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { ImUser } from 'react-icons/im';
 import styles from './styles/header.module.css';
 
@@ -9,14 +9,14 @@ const Navigation = () => (
       <h1 className={styles.title}>Bookstore CMS </h1>
       <ul className={styles.naviagtionlink}>
         <li>
-          <Link to="/">
+          <NavLink className={styles.nav_link} to="/">
             BOOKS
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/categories">
+          <NavLink className={styles.nav_link} to="/categories">
             CATEGORIES
-          </Link>
+          </NavLink>
         </li>
       </ul>
 
